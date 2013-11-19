@@ -51,6 +51,7 @@ set number
 
 " Ajustes de Taglist
 let Tlist_Use_Right_Window = 1
+let Tlist_File_Fold_Auto_Close = 1
 
 " --------------------
 " MiniBufExpl
@@ -119,7 +120,8 @@ imap <C-@> <C-x><C-o>
 
 " Paneles con plugins para desarrollo
 nnoremap <silent> <F7> :NERDTreeToggle<CR>
-nnoremap <silent> <F8> :TlistToggle<CR>
+"nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
 map <F9> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 "set foldmethod=manual
